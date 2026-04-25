@@ -10,19 +10,22 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-<form>
+<form method="post">
 <label for="name">Name:</label>
 	<input type="text" required id="name" placeholder="Name">
 
 <label for="email">Email::</label>
-	<input type="email" required id="emil" placeholder="Email">
+	<input type="email" required id="email" placeholder="Email">
 
 <label>Gender:</label>
-	<input type="radio" required id="gender_m">
-	<label for="gender_m">male</label>
+	<label for="male">
+	<input type="radio"  value="gender_m" name="gender" id="male">MALE
+	</label>
 
-	<input type="radio" required id="gender_f">
-	<label for="gender_f">female</label>
+	
+	<label for="female">
+	<input type="radio"  value="gender_f" name="gender" id="female">FEMALE
+	</label>
 
 <label for="cars">Car Brands:</label>
 	<select required id="cars" name="cars">
@@ -38,6 +41,16 @@
 
 <label for="dob">DOB:</label>
 	<input type="date" required id="dob">
+
+	<label for="tel">Phone Number</label>
+	<input type="tel" id="tel" placeholder="xxx-xxx-xxxx">
+
+	<label for="password">Password</label>
+	<input type="password" required id="password" placeholder="password">
+	<input type="checkbox" required id="tos">
+	<label for="tos">I agree to the TOS</label>
+	<button type="submit">Submit</button>
+	
 	
 
 </form>
